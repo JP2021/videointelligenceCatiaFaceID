@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste Google Video AI</title>
+    <link rel="stylesheet" href="styles.css">
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+        .container {
+            text-align: center;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            width: 80%;
+            max-width: 800px;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+        }
+        input[type="file"] {
+            padding: 10px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        h1 {
+            font-size: 24px;
+        }
+        .result {
+            margin-top: 20px;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Google Video AI - Teste de Análise</h1>
+        <p>Envie um vídeo para análise.</p>
+        <input type="file" id="videoInput" accept="video/*">
+        <button id="uploadButton">Enviar e Analisar</button>
+        <video id="videoPreview" controls style="display:none; margin-top: 20px;"></video>
+        <div id="results" style="margin-top: 20px;"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
